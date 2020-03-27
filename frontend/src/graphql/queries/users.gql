@@ -1,0 +1,9 @@
+query($limit: Int!, $page: Int!)  {
+  users(limit: $limit, page: $page){
+     data{
+          id
+          name
+          email
+        },total, per_page
+  }
+}
